@@ -207,6 +207,29 @@ footer p{font-size:12px;color:rgba(255,255,255,.3);letter-spacing:1px}
 .badge-info{display:flex;flex-direction:column}
 .badge-stars{color:#f5b800;font-size:20px;letter-spacing:2px}
 .badge-text{font-size:12px;color:rgba(255,255,255,.4);letter-spacing:1px;text-transform:uppercase;margin-top:4px}
+
+/* WHATSAPP BUTTON */
+.wa-btn{position:fixed;bottom:28px;right:28px;z-index:999;background:#25d366;color:#fff;width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;text-decoration:none;box-shadow:0 4px 20px rgba(37,211,102,.5);transition:transform .2s,box-shadow .2s}
+.wa-btn:hover{transform:scale(1.1);box-shadow:0 6px 28px rgba(37,211,102,.7)}
+.wa-btn svg{width:32px;height:32px;fill:#fff}
+.wa-tooltip{position:absolute;right:70px;background:#0d0d0d;color:#fff;font-size:13px;font-weight:600;padding:8px 14px;border-radius:4px;white-space:nowrap;opacity:0;pointer-events:none;transition:opacity .2s;letter-spacing:.5px}
+.wa-btn:hover .wa-tooltip{opacity:1}
+
+/* MAPS */
+.maps-wrap{margin-top:40px;border-radius:4px;overflow:hidden;border:1px solid #e0e0e0}
+.maps-wrap iframe{width:100%;height:320px;border:none;display:block}
+
+/* BLOG */
+#blog{background:var(--gray)}
+.blog-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px;margin-top:50px}
+.bcard{background:#fff;padding:36px;position:relative;overflow:hidden;transition:transform .2s;border-bottom:3px solid transparent}
+.bcard:hover{transform:translateY(-3px);border-bottom-color:var(--blue)}
+.bcard-tag{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--blue);font-weight:700;margin-bottom:14px}
+.bcard h3{font-family:'Barlow Condensed',sans-serif;font-size:24px;font-weight:900;text-transform:uppercase;letter-spacing:1px;color:#0d0d0d;margin-bottom:14px;line-height:1.1}
+.bcard p{font-size:14px;color:var(--muted);line-height:1.75;font-weight:300}
+.bcard p + p{margin-top:10px}
+.bcard-footer{margin-top:20px;font-size:11px;letter-spacing:2px;color:var(--muted);text-transform:uppercase;display:flex;align-items:center;gap:8px}
+.bcard-footer::before{content:'';display:block;width:20px;height:2px;background:var(--blue)}
 </style>
 </head>
 <body>
@@ -411,6 +434,36 @@ footer p{font-size:12px;color:rgba(255,255,255,.3);letter-spacing:1px}
   </div>
 </section>
 
+
+<section id="blog">
+  <div class="label">Consejos y trucos</div>
+  <h2 class="s-title">Blog &<br>Consejos</h2>
+  <p class="s-sub">Información útil para cuidar mejor tus dispositivos.</p>
+  <div class="blog-grid">
+    <div class="bcard">
+      <div class="bcard-tag">🔋 Batería</div>
+      <h3>¿Cómo saber si tu batería está mal?</h3>
+      <p>¿Tu móvil no dura ni medio día? ¿Se apaga solo aunque marque un 20%? ¿Se calienta demasiado mientras lo cargas? Estas son las señales más claras de que tu batería está fallando.</p>
+      <p><strong>Señal 1 — Se descarga muy rápido.</strong> Una batería en buen estado debería aguantar un día completo con uso normal. Si no llega a mediodía, algo va mal.</p>
+      <p><strong>Señal 2 — El móvil se apaga solo.</strong> Si el teléfono se apaga de repente con batería aparente, la batería ya no tiene la capacidad real que indica la pantalla.</p>
+      <p><strong>Señal 3 — Tarda mucho en cargar.</strong> Una carga que antes tardaba 1 hora ahora tarda 3 horas es síntoma claro de batería degradada.</p>
+      <p><strong>Señal 4 — La parte trasera abomba.</strong> Si notas que la funda no cierra bien o la pantalla parece levantarse, la batería se está hinchando. Esto es urgente — trae el móvil cuanto antes.</p>
+      <p style="margin-top:14px;padding:14px;background:rgba(0,153,214,.08);border-left:3px solid var(--blue);font-size:13px;color:#444">💡 <strong>Consejo Servicell:</strong> Las baterías suelen durar entre 2 y 3 años con uso normal. Un cambio de batería cuesta mucho menos que un móvil nuevo y le da una segunda vida a tu dispositivo.</p>
+      <div class="bcard-footer">Servicell Sarriguren · Consejos</div>
+    </div>
+    <div class="bcard">
+      <div class="bcard-tag">📱 Pantalla</div>
+      <h3>¿Qué hacer si se te rompe la pantalla?</h3>
+      <p>Un golpe, una caída… y la pantalla aparece con grietas o líneas. Antes de entrar en pánico, sigue estos pasos.</p>
+      <p><strong>Paso 1 — No sigas usando el cristal roto.</strong> Los bordes afilados pueden cortarte los dedos y los fragmentos pueden dañar el interior del móvil si siguen cayendo.</p>
+      <p><strong>Paso 2 — Pon cinta adhesiva provisional.</strong> Si tienes que seguir usándolo antes de traerlo a reparar, cubre las grietas con cinta transparente para evitar que se astille más.</p>
+      <p><strong>Paso 3 — No intentes arreglarlo tú solo.</strong> Los tutoriales de YouTube hacen que parezca fácil, pero una pantalla mal colocada puede dañar la placa base y convertir una reparación barata en una cara.</p>
+      <p style="margin-top:14px;padding:14px;background:rgba(0,153,214,.08);border-left:3px solid var(--blue);font-size:13px;color:#444">💡 <strong>Consejo Servicell:</strong> En la mayoría de casos cambiamos la pantalla el mismo día. Tráelo por la mañana y lo tienes listo por la tarde.</p>
+      <div class="bcard-footer">Servicell Sarriguren · Consejos</div>
+    </div>
+  </div>
+</section>
+
 <footer>
   <div class="footer-brand">
 
@@ -472,5 +525,12 @@ async function sendForm(e){
   btn.disabled=false;
 }
 </script>
+
+<!-- WHATSAPP FLOTANTE -->
+<a class="wa-btn" href="https://wa.me/34603120200?text=Hola%2C%20me%20gustar%C3%ADa%20información%20sobre%20una%20reparación" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+  <span class="wa-tooltip">Escríbenos por WhatsApp</span>
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
 </body>
 </html>
